@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Summary from "./Summary"; // Ensure the path is correct
-
 import "./Quiz.css";
 
-const API_URL = "https://quiz-app-go3x.onrender.com/api/quiz";  
+const API_URL = "https://quiz-app-go3x.onrender.com/api/quiz";
 
 const Quiz = () => {
   const [questions, setQuestions] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [quizOver, setQuizOver] = useState(false);
+  const [userAnswers, setUserAnswers] = useState([]); // Store user answers
 
   useEffect(() => {
     fetchQuestions();
@@ -26,8 +26,19 @@ const Quiz = () => {
     }
   };
 
-  const handleAnswer = (isCorrect) => {
-    if (isCorrect) setScore((prevScore) => prevScore + 4);
+  const handleAnswer = (selectedOption) => {
+    // Store user's answer along with the correct answer
+    setUserAnswers((prev) => [
+      ...prev,
+      {
+        question: questions[currentQuestion].description,
+        selected: selectedOption.description,
+        correct: questions[currentQuestion].options.find((opt) => opt.is_correct).description
+      }
+    ]);
+
+    if (selectedOption.is_correct) setScore((prevScore) => prevScore + 4);
+
     if (currentQuestion + 1 < questions.length) {
       setCurrentQuestion((prevQuestion) => prevQuestion + 1);
     } else {
@@ -51,7 +62,7 @@ const Quiz = () => {
                     <button
                       key={index}
                       className="option-btn"
-                      onClick={() => handleAnswer(option.is_correct)}
+                      onClick={() => handleAnswer(option)}
                     >
                       {option.description}
                     </button>
@@ -62,7 +73,11 @@ const Quiz = () => {
               <p>Loading questions...</p>
             )
           ) : (
-            <Summary score={score} total={questions.length * 4} />
+            <Summary 
+              score={score} 
+              total={questions.length * 4} 
+              userAnswers={userAnswers} 
+            />
           )}
         </div>
       </main>
