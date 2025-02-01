@@ -4,7 +4,7 @@ import Summary from "./Summary"; // Ensure the path is correct
 
 import "./Quiz.css";
 
-const API_URL = "https://api.jsonserve.com/Uw5CrX";
+const API_URL = "http://localhost:5000/api/quiz";
 
 const Quiz = () => {
   const [questions, setQuestions] = useState([]);
