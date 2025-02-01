@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Quiz App with Gamification
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a **web-based quiz application** built using **React.js**, featuring gamification elements such as score tracking, answer reviews, and badges based on performance. The quiz data is fetched from an external API, and the app displays multiple-choice questions with interactive feedback. After completing the quiz, the user is shown a score summary, including correct/incorrect answers and a gamified award system.
 
-## Available Scripts
+## Live Demo
 
-In the project directory, you can run:
+You can view the live project here: [Quiz App](https://quizappshruti.netlify.app/)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **API Integration:** Quiz data is dynamically fetched from an API endpoint: [Quiz API](https://api.jsonserve.com/Uw5CrX).
+- **Start Quiz:** Begin the quiz by clicking on the "Start Quiz" button.
+- **Multiple-Choice Questions:** The quiz consists of multiple-choice questions with interactive options.
+- **Answer Review:** After completing the quiz, users can see a detailed review of their answers, including which answers were correct and which were wrong.
+- **Score Summary:** Displays the total score, with a gamified award badge (Bronze, Silver, or Gold) based on the score.
+- **Gamification:** Award badges based on the score achieved in the quiz.
+- **Responsive Design:** The app is mobile-friendly and adapts to different screen sizes.
+- **Restart Quiz:** Users can restart the quiz anytime to improve their score.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- **Frontend:** React.js
+- **Backend :** Node.js (for API proxy)
+- **Styling:** CSS (with flexibility for responsive design)
+- **Hosting:** Netlify (for frontend)
+- **API:** External JSON API to fetch quiz data
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+To set up the project locally, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Clone the repository
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/786Shruti/Quiz-app.git
+Navigate to the project folder:
+cd Quiz-app
+2. Install Dependencies
+Install the frontend dependencies by running:
+npm install
+3. Start the Frontend
+To start the frontend, run:
+npm start
+This will launch the React app and open it in your browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Set up the Backend Server
+Open a new terminal window and navigate to the server directory:
+cd server
+Install the server-side dependencies:
 
-### `npm run eject`
+npm install
+5. Start the Backend Server
+Start the backend server to fetch API data and make the app functional:
+node server.js
+This will retrieve the quiz data from the provided API endpoint on http://localhost:5000.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Screenshots
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Quiz UI:
+![Quiz UI]()
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Answer Review Page:
+![Answer Review Page](https://your-image-link.com/answer-review-screenshot.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Gamification Badge:
+![Gamification Badge](https://your-image-link.com/gamification-badge-screenshot.png)
 
-## Learn More
+## Video Walkthrough
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Watch a short video walkthrough of the app here: [Video Walkthrough](https://your-video-link.com)
