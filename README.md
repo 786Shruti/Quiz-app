@@ -33,26 +33,37 @@ To set up the project locally, follow these steps:
 
 ```bash
 git clone https://github.com/786Shruti/Quiz-app.git
-Navigate to the project folder:
+
+### 2. Navigate to the project folder:
+
+```bash
 cd Quiz-app
-2. Install Dependencies
-Install the frontend dependencies by running:
+
+### 3. Install the frontend dependencies by running:
+
+```bash
 npm install
-3. Start the Frontend
-To start the frontend, run:
+
+### 4. Start the Frontend. This will launch the React app and open it in your browser.
+
+```bash
 npm start
-This will launch the React app and open it in your browser.
 
-4. Set up the Backend Server
-Open a new terminal window and navigate to the server directory:
+### 5. Set up the Backend Server
+
+```bash
 cd server
-Install the server-side dependencies:
 
+### 6.Install the server-side dependencies:
+
+```bash
 npm install
-5. Start the Backend Server
-Start the backend server to fetch API data and make the app functional:
+
+### 7. Start the Backend Server. Start the backend server to fetch API data and make the app functional. This will retrieve the quiz data from the provided API endpoint on http://localhost:5000.
+
+```bash
 node server.js
-This will retrieve the quiz data from the provided API endpoint on http://localhost:5000.
+
 
 ## Screenshots
 
