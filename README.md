@@ -78,15 +78,18 @@ node server.js
 ## Screenshots
 
 ### Quiz UI:
-![Quiz UI](https://your-image-link.com/quiz-ui-screenshot.png)
+![Quiz UI](https://drive.google.com/file/d/1jfDcBepYSw-rT043dWInTJNGyvxOHX8X/view?usp=drive_link)
+
+### Question and option page:
+![Question and option page](https://drive.google.com/file/d/1o1XaCIIk0iTCFYDHsv6oFttGfXMWSDHR/view?usp=drive_link)
 
 ### Answer Review Page:
-![Answer Review Page](https://your-image-link.com/answer-review-screenshot.png)
+![Answer Review Page](https://drive.google.com/file/d/1jdhMLkBaQ-tz6awUJu_mOmLLzyfxil7T/view?usp=drive_link)
 
 ### Gamification Badge:
-![Gamification Badge](https://your-image-link.com/gamification-badge-screenshot.png)
+![Gamification Badge](https://drive.google.com/file/d/1Vw9g1FPK6bQDwJZtQjD5r5G6Hb5RTgIR/view?usp=drive_link)
 
 ## Video Walkthrough
 
-Watch a short video walkthrough of the app here: [Video Walkthrough](https://your-video-link.com)
+Watch a short video walkthrough of the app here: [Video Walkthrough mobile]([https://your-video-link.com](https://drive.google.com/file/d/1FSagIAvdAi8p22whIM6m5pTRuAQsjRQt/view?usp=drive_link))  [Video Walkthrough desktop]([https://your-video-link.com](https://drive.google.com/file/d/1z_rJU7EKY_PJSRmO413VrH2Ud_6TL6mt/view?usp=drive_link))
 
