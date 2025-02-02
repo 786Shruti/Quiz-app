@@ -20,7 +20,7 @@ You can view the live project here: [Quiz App](https://quizappshruti.netlify.app
 ## Technologies Used
 
 - **Frontend:** React.js
-- **Backend :** Node.js (for API proxy)
+- **Backend:** Node.js (for API proxy)
 - **Styling:** CSS (with flexibility for responsive design)
 - **Hosting:** Netlify (for frontend)
 - **API:** External JSON API to fetch quiz data
@@ -33,42 +33,52 @@ To set up the project locally, follow these steps:
 
 ```bash
 git clone https://github.com/786Shruti/Quiz-app.git
+```
 
-### 2. Navigate to the project folder:
+### 2. Navigate to the project folder
 
 ```bash
 cd Quiz-app
+```
 
-### 3. Install the frontend dependencies by running:
+### 3. Install the frontend dependencies
 
 ```bash
 npm install
+```
 
-### 4. Start the Frontend. This will launch the React app and open it in your browser.
+### 4. Start the Frontend
+
+This will launch the React app and open it in your browser.
 
 ```bash
 npm start
+```
 
 ### 5. Set up the Backend Server
 
 ```bash
 cd server
+```
 
-### 6.Install the server-side dependencies:
+### 6. Install the server-side dependencies
 
 ```bash
 npm install
+```
 
-### 7. Start the Backend Server. Start the backend server to fetch API data and make the app functional. This will retrieve the quiz data from the provided API endpoint on http://localhost:5000.
+### 7. Start the Backend Server
+
+Start the backend server to fetch API data and make the app functional. This will retrieve the quiz data from the provided API endpoint on http://localhost:5000.
 
 ```bash
 node server.js
-
+```
 
 ## Screenshots
 
 ### Quiz UI:
-![Quiz UI]()
+![Quiz UI](https://your-image-link.com/quiz-ui-screenshot.png)
 
 ### Answer Review Page:
 ![Answer Review Page](https://your-image-link.com/answer-review-screenshot.png)
@@ -79,3 +89,4 @@ node server.js
 ## Video Walkthrough
 
 Watch a short video walkthrough of the app here: [Video Walkthrough](https://your-video-link.com)
+
