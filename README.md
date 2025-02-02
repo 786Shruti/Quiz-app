@@ -87,9 +87,11 @@ node server.js
 ![Answer Review Page](https://drive.google.com/file/d/1jdhMLkBaQ-tz6awUJu_mOmLLzyfxil7T/view?usp=drive_link)
 
 ### Gamification Badge:
-![Gamification Badge](https://drive.google.com/file/d/1Vw9g1FPK6bQDwJZtQjD5r5G6Hb5RTgIR/view?usp=drive_link)
+[Gamification Badge](https://drive.google.com/file/d/1Vw9g1FPK6bQDwJZtQjD5r5G6Hb5RTgIR/view?usp=drive_link)
 
 ## Video Walkthrough
 
-Watch a short video walkthrough of the app here: [Video Walkthrough mobile]([https://your-video-link.com](https://drive.google.com/file/d/1FSagIAvdAi8p22whIM6m5pTRuAQsjRQt/view?usp=drive_link))  [Video Walkthrough desktop]([https://your-video-link.com](https://drive.google.com/file/d/1z_rJU7EKY_PJSRmO413VrH2Ud_6TL6mt/view?usp=drive_link))
+Watch a short video walkthrough of the app here: 
+[Video Walkthrough mobile]([https://your-video-link.com](https://drive.google.com/file/d/1FSagIAvdAi8p22whIM6m5pTRuAQsjRQt/view?usp=drive_link))  
+[Video Walkthrough desktop]([https://your-video-link.com](https://drive.google.com/file/d/1z_rJU7EKY_PJSRmO413VrH2Ud_6TL6mt/view?usp=drive_link))
 
