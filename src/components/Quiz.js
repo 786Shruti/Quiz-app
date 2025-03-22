@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 import Summary from "./Summary"; // Ensure the path is correct
 import "./Quiz.css";
 
-const API_URL = "https://quiz-app-go3x.onrender.com/api/quiz";
+const API_URL = "https://opentdb.com/api.php?amount=10&category=17&difficulty=hard&type=multiple";
 
 const Quiz = () => {
   const [questions, setQuestions] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [quizOver, setQuizOver] = useState(false);
-  const [userAnswers, setUserAnswers] = useState([]); // Store user answers
+  const [userAnswers, setUserAnswers] = useState([]);
 
   useEffect(() => {
     fetchQuestions();
@@ -20,14 +20,25 @@ const Quiz = () => {
     try {
       const response = await axios.get(API_URL);
       console.log(response.data);
-      setQuestions(response.data.questions || []); // Ensure it's an array
+      
+      setQuestions(
+        response.data.results.map((q) => ({
+          description: q.question,
+          options: [
+            ...q.incorrect_answers.map((answer) => ({
+              description: answer,
+              is_correct: false,
+            })),
+            { description: q.correct_answer, is_correct: true },
+          ].sort(() => Math.random() - 0.5), // Shuffle options
+        }))
+      );
     } catch (error) {
       console.error("Error fetching quiz data:", error);
     }
   };
 
   const handleAnswer = (selectedOption) => {
-    // Store user's answer along with the correct answer
     setUserAnswers((prev) => [
       ...prev,
       {
