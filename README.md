@@ -8,7 +8,8 @@ You can view the live project here: [Quiz App](https://quizappshruti.netlify.app
 
 ## Features
 
-- **API Integration:** Quiz data is dynamically fetched from an API endpoint: [Quiz API](https://api.jsonserve.com/Uw5CrX).
+- **API Integration:** Quiz data is dynamically fetched from an API endpoint: [Quiz API](https://quiz-app-go3x.onrender.com/api/quiz
+).
 - **Start Quiz:** Begin the quiz by clicking on the "Start Quiz" button.
 - **Multiple-Choice Questions:** The quiz consists of multiple-choice questions with interactive options.
 - **Answer Review:** After completing the quiz, users can see a detailed review of their answers, including which answers were correct and which were wrong.
