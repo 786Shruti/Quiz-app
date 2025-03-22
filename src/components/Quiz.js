@@ -5,6 +5,7 @@ import "./Quiz.css";
 
 const API_URL = "https://quiz-app-go3x.onrender.com/api/quiz";
 
+
 const Quiz = () => {
   const [questions, setQuestions] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
